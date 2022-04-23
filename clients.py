@@ -17,7 +17,7 @@ async def main(x):
     await asyncio.gather(*coros)
 
 if __name__ ==  '__main__':
-    for i in range(100, 12000, 1000):
+    for i in range(7000, 12000, 100):
         t1 = time.time()
         loop = asyncio.get_event_loop()
         loop.run_until_complete(main(i))
